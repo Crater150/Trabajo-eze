@@ -1,0 +1,428 @@
+/* Sobre el nav, le dimos un display flex y este ya coloca las cajas una alado de la otra, con justify content le señalamos como queremos que las separe, en este caso yo quería que este pegado un contenedor al costado izquierdo, y el otro al costado derecho (cabe aclarar que si le agregamos otro div más, este estara en la mitad, ya que es la medida que el toma) */
+body{
+background-color: #74b9ff54;
+}
+
+header{
+	height: 700px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00000066;
+  width: 100%;
+  height: 60px;
+}
+.logo  {
+width: 3%; 
+  }
+  .items {
+    font-size: x-large;
+  }
+  .items a:hover {
+  font-size: xx-large;
+  box-shadow: -8px -24px 42px -6px rgba(102,102,102,0.97);
+-webkit-box-shadow: -8px -24px 42px -6px rgba(102,102,102,0.97);
+-moz-box-shadow: -8px -24px 42px -6px rgba(102,102,102,0.97); 
+  }
+.btn-nav {
+  display: none;
+  margin: 10px;
+  padding: 5px 10px;
+}
+/* Acá le damos propiedades a la imagen, con 100vw le estamos dando un viewport del 100% sobre el width, que sería: De la pantalla, dame el 100% de su anchura. si o si. Con max height le damos hasta donde queremos que crezca la imagen, y con min height hasta donde queremos que se achiqué. con object fit, le dirigimos que forma va a tener la imagen cuando presente un problema con la resolución (ya sea que llegue a su maximo de altura o su minimo de altura) y con object position le damos que posicion de la imagen queremos que muestre. En este caso no es relevante hasta que se achiqué ya que la imagen siempre se muestra por completo */
+
+.container-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: -535px auto auto 45%;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+  position: relative;
+}
+.slider {
+  display: flex;
+  width: 400%;
+  height: 400px;
+  margin-left: -100%;
+}
+.slider__section {
+  width: 100%;
+}
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.slider__btn {
+  font-size: 30px;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 160px;
+  margin: 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+.slider__btn:hover {
+  background-color: #fff;
+  transition: 1s;
+}
+.slider__btn__right {
+  right: 0;
+}
+/* Al logo le doy un margen (una separacion) de 20px a la izquierda */
+.logo {
+  margin-left: 20px;
+}
+/* A los items le doy un margen (una separacion) de 30px a la derecha */
+.items {
+  margin-right: 30px;
+}
+/* Con margin inline, le doy de separación a los costados a cada boton de 5px, con text decoration le saco la linea (o subrayado) que tienen los elemento A por defecto, con color black, paso de azul a negro. */
+.items a {
+  margin-inline: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/*//////////////////////////////////////////*/
+.section1 {
+	height: 600px;
+	display: flex;
+  }
+.container_form {
+	width: 30%;
+	z-index: 1;
+top: 22%
+  }
+
+.boton-1 {
+  border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: #2e518b; /*color botón*/
+  color: #ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  border-radius: 50px; /*bordes redondos*/
+}
+.boton-2 {
+  margin-left: 7px;
+}
+.formulario {
+  display: grid;
+  
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.bg-form {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*/////////////////////////////////////////*/
+
+/* .img_footer{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.ht1 {
+  display: flex;
+  /* top: 335px; */
+  font-size: 42px;
+  justify-content: center;
+  color: #7e6104;
+  text-align: center;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1170px;
+  margin: 50px auto;
+}
+
+.miswitch {
+  border: 1px solid #225b78;
+  border-radius: 20px;
+  color: yellowgreen;
+  position: relative;
+  margin: 0px auto 50px;
+  width: 200px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.miswitch a {
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.switch-btn {
+  position: absolute;
+  background: #0c1f28;
+  width: 50%;
+  height: 90%;
+  border-radius: 20px;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.on {
+  left: 97px;
+}
+
+/* Tabla de precio*/
+
+.pricing-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pricing-table {
+  width: 32%;
+  transition: transform 0.5s ease;
+  /* border: 1px red solid; */
+
+  /* -webkit-perspective: 2000px; */
+  /* perspective: 2000px; */
+}
+
+.pricing-table:hover {
+  transform: scale(1.07);
+}
+
+.pricing-table-cont {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  height: 500px;
+
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  transition: 0.3s ease;
+}
+
+.pricing-table-month,
+.pricing-table-year {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.pricing-table-year {
+  transform: rotateY(180deg);
+}
+
+.rotando-tabla {
+  transform: rotateY(180deg);
+}
+
+.pricing-table-head {
+  color: #173d50;
+  padding: 30px 0px;
+}
+.btn-form_flex{
+	display: flex;
+  padding-top: 3%;
+	align-items: center;
+}
+.pricing-table-head h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.pricing-table-head h3 {
+  font-size: 60px;
+  font-weight: 400;
+  display: inline;
+}
+
+.pricing-table-head h3 sup,
+.pricing-table-head h3 sub {
+  font-size: 20px;
+  color: #abb8c0;
+  font-weight: 600;
+}
+
+.pricing-table-head h3 sub {
+  font-size: 13px;
+}
+
+.pricing-table-head.estandar-title h2,
+.pricing-table-head.estandar-title h3,
+.pricing-table-head.estandar-title h3 sup,
+.pricing-table-head.estandar-title h3 sub {
+  color: #e97d68;
+}
+
+.pricing-table-list li {
+  background: #f1f3f5;
+  padding: 10px 0;
+}
+
+.pricing-table-list li:nth-child(2n) {
+  background: #fff;
+}
+
+.pricing-table-button {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background: #0c1f28;
+  color: #fff;
+  margin-top: 23px;
+}
+
+.pricing-table-button.estandar {
+  background: #e97d68;
+}
+
+.cuadro {
+	width: 100%;
+	margin: auto;
+	height: 150px;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+	background-color: #e97d68;
+}
+.formulario label  {
+  color: black;
+  font-weight: 900;
+  font-size: 154%;
+  background: #26bdbf70;
+   }
+
+
+.formulario input{
+border:  7px double;
+}
+
+.fa-solid  {
+  font-size: xx-large;
+}
+.fa-brands {
+  font-size: xx-large;
+}
+
+.Opciones-internacionales {
+  width: 100%;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;     
+}
+
+.irlanda , .london , .cuba , .inglaterra {
+height: 500px;
+background-color:white;
+}
+
+}
+.irlanda:hover {
+  box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  
+}
+.london:hover {
+  box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  
+}
+.cuba:hover {
+  box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  
+}
+.inglaterra:hover {
+  box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -13px -12px 36px 9px rgba(0,0,0,0.75);
+  
+}
+/* RESPONSIVE ===============================  */
+@media screen and (max-width: 750px) {
+  .pricing-table {
+    width: 72%;
+    margin-bottom: 20px;
+  }
+
+  .pricing-wrap {
+    justify-content: center;
+  }
+
+  .pricing-table:hover {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .btn-nav {
+    display: inline-block;
+  }
+  .items {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pricing-table {
+    width: 90%;
+  }
+  .ht1{
+	font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container_form {
+ top: 0%;
+  }

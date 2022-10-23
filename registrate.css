@@ -1,0 +1,57 @@
+main {
+  margin: -7%  
+}
+
+body {
+    margin: 0%;
+    background-color: #4d3d5c;
+}
+
+ 
+ form {
+    width: 100%;
+    max-width: 600px;
+    margin: 165px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#4d3d5c;
+box-shadow: -42px 9px 48px 0px rgba(0,0,0,0.81);
+-webkit-box-shadow: -42px 9px 48px 0px rgba(0,0,0,0.81);
+-moz-box-shadow: -42px 9px 48px 0px rgba(0,0,0,0.81);
+ }
+
+    
+  
+  form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .boton-personalizado {
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    color:#ffffff;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#005BBB;
+    }
+  .titulo-1 { 
+    text-shadow: -6px 7px 4px rgba(93,93,93,0.87);
+    display: flex;
+    justify-content: center;
+    font-size: 430%;
+    color: #d6ff00;
+margin: 0%;
+    }
+
+
+    @media (max-width: 600px) {
+      form {
+width: 60%;      }
+    }

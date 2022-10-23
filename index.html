@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Es una pagina dedicada a la de boletos" />
+
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Clase 1</title>
+  </head>
+  <body>
+    <!-- Acá abajo tenemos el header, que contiene dos divisores, tiene un nav, y un div con clase de galería, en el nav vamos a contener todo el menu de navegación de la página sumado al Logo que podría ser una imagen, un texto o lo que se te ocurra, en este caso lo hice así. Tambien si te fijas, contiene un button con style none, esto es porque vamos a mostrarlo cuando llegue a cierta resolución la pantalla, ya que sera el boton de navegación para el celular. -->
+    <header>
+      <nav>
+<img class="logo" src="../zyro-image.png" alt="">
+
+  <div class="items">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+        <button class="btn-nav"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+  <section class="section1">
+    <div class="background">
+      <img
+        class="bg-form"
+     
+      />
+    </div>
+    <div class="container_form">
+        <form class="formulario">
+          <label for="">Email</label>
+          <input type="email" name="" id="" />
+          <label for="">Nombre</label>
+          <input type="text" name="" id="" />
+          <label for="">Password</label>
+          <input type="password" name="" id="" />
+          <label for="">Confirm password</label>
+          <input type="password" name="" id="" />
+
+          <div class="btn-form_flex">
+            <button class="boton-1" type="submit">Iniciar Sesion</button>
+            <a class="boton-2" href="registrate.html">Registrate</a>
+          </div>
+        
+        </form>
+    </div>
+  </section>                                         
+</section>
+
+
+
+      <div class="container-slider">
+        <div class="slider" id="slider">
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="https://turismo.buenosaires.gob.ar/sites/turismo/files/panoramica_barrio_la_boca_1500x610_0.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="https://www.caracteristicas.co/wp-content/uploads/2018/09/turismo-e1579550648680.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="https://www.entornoturistico.com/wp-content/uploads/2016/03/turismo.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slider__section">
+            <img
+              class="slider__img"
+              src="https://turismo.lapampa.gob.ar/images/brama2021/Turismo_Web_07.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div id="btn-right" class="slider__btn slider__btn__right">
+          <i class="fa-solid fa-caret-right"></i>
+        </div>
+        <div id="btn-left" class="slider__btn slider__btn__left">
+          <i class="fa-solid fa-caret-left"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <H1>Vuelos internacionales</H1>
+
+<section class="Opciones-internacionales">
+  <div class="irlanda">
+    <img height="166" width="303px" src="https://www.volunteeringsolutions.com/asset/uploads/img/page_header_image/ireland/cork/1286/1286_ireland1.jpg" alt="img-irlanda">
+    <h3>Paquete a Irlanda</h3>
+    <br>
+    <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+    <i class="fi fi-ss-plane-alt"></i>
+    
+
+  </div>
+  <div class="london">
+    <img height="166" width="303px" src="https://images.squarespace-cdn.com/content/v1/5cb4b8882727be0cfbe9aca9/1565356848823-50GPD2FNTCC55320G8DM/assembly-london-fallback.png?format=2500w" alt="img-London">
+    <h3>Paquete a London</h3>
+    <br>
+    <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+    </div>
+  <div class="cuba">
+    <img height="166" width="303px" src="https://www.cubatesoro.com/wp-content/uploads/2015/09/turismo-cubano.jpg" alt="img-cuba">
+    <h3>Vuelos Cuba</h3>
+    <br>
+    <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+
+  </div>
+  <div class="inglaterra">
+    <img height="166" width="303px" src="https://www.losviajesdegrimes.com/wp-content/uploads/2019/12/que-ver-en-inglaterra.jpg" alt="img-inglaterra">
+    <h3>Vuelos a Inglaterra</h3>
+    <br>
+    <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+  </div>
+</section>
+
+
+
+
+      <section class="section2">
+        <div class="ht1">
+          <h1 class="titulo2">Beneficios V.I.P</h1>
+        </div>
+        <div class="wrap">
+          <div class="miswitch">
+            <div class="switch-btn" id="swicht-btn"></div>
+            <a>Mensual</a>
+            <a>Anual</a>
+          </div>
+
+          <div class="pricing-wrap">
+            <div class="pricing-table">
+              <div class="pricing-table-cont">
+                <div class="pricing-table-month">
+                  <div class="pricing-table-head">
+                    <h2>BASICO</h2>
+                    <h3><sup>$ </sup>30<sub>/MES</sub></h3>
+                  </div>
+                  <ul class="pricing-table-list">
+                    <li><span>256MB</span> Almacenamiento</li>
+                    <li><span>1 </span>Usuario</li>
+                    <li><span>1 </span>Sitio web</li>
+                    <li><span>1 </span>Dominio</li>
+                    <li><span>Ilimitado </span>Ancho de Banda</li>
+                    <li><span>Ilimitados </span>Correos</li>
+                  </ul>
+                  <a href="#" class="pricing-table-button">Seleccionar plan</a>
+                </div>
+                <div class="pricing-table-year">
+                  <div class="pricing-table-head">
+                    <h2>BASICO</h2>
+                    <h3><sup>$ </sup>320<sub>/AÑO</sub></h3>
+                  </div>
+                  <ul class="pricing-table-list">
+                    <li><span>256MB</span> Almacenamiento</li>
+                    <li><span>1 </span>Usuario</li>
+                    <li><span>1 </span>Sitio web</li>
+                    <li><span>1 </span>Dominio</li>
+                    <li><span>Ilimitado </span>Ancho de Banda</li>
+                    <li><span>Ilimitados </span>Correos</li>
+                  </ul>
+                  <a href="#" class="pricing-table-button">Seleccionar plan</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-table">
+              <div class="pricing-table-cont">
+                <div class="pricing-table-month">
+                  <div class="pricing-table-head estandar-title">
+                    <h2>ESTANDAR</h2>
+                    <h3><sup>$ </sup>60<sub>/MES</sub></h3>
+                  </div>
+                  <ul class="pricing-table-list">
+                    <li><span>256MB</span> Almacenamiento</li>
+                    <li><span>1 </span>Usuario</li>
+                    <li><span>1 </span>Sitio web</li>
+                    <li><span>1 </span>Dominio</li>
+                    <li><span>Ilimitado </span>Ancho de Banda</li>
+                    <li><span>Ilimitados </span>Correos</li>
+                  </ul>
+                  <a href="#" class="pricing-table-button estandar"
+                    >Seleccionar plan</a
+                  >
+                </div>
+                <div class="pricing-table-year">
+                  <div class="pricing-table-head estandar-title"">
+                  <h2>ESTANDAR</h2>
+                  <h3><sup>$ </sup>630<sub>/AÑO</sub></h3>
+                </div>
+                <ul class="pricing-table-list">
+                  <li><span>256MB</span> Almacenamiento</li>
+                  <li><span>1 </span>Usuario</li>
+                  <li><span>1 </span>Sitio web</li>
+                  <li><span>1 </span>Dominio</li>
+                  <li><span>Ilimitado </span>Ancho de Banda</li>
+                  <li><span>Ilimitados </span>Correos</li>
+                </ul>
+                <a href="#" class="pricing-table-button estandar"
+                  >Seleccionar plan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-table">
+            <div class="pricing-table-cont">
+              <div class="pricing-table-month">
+                <div class="pricing-table-head">
+                  <h2>PREMIUM</h2>
+                  <h3><sup>$ </sup>90<sub>/MES</sub></h3>
+                </div>
+                <ul class="pricing-table-list">
+                  <li><span>256MB</span>   Almacenamiento</li>
+                  <li><span>1 </span>Usuario</li>
+                  <li><span>1 </span>Sitio web</li>
+                  <li><span>1 </span>Dominio</li>
+                  <li><span>Ilimitado </span>Ancho de Banda</li>
+                  <li><span>Ilimitados </span>Correos</li>
+                </ul>
+                <a href="#" class="pricing-table-button">Seleccionar plan</a>
+              </div>
+              <div class="pricing-table-year">
+                <div class="pricing-table-head">
+                  <h2>PREMIUM</h2>
+                  <h3><sup>$ </sup>950<sub>/AÑO</sub></h3>
+                </div>
+                <ul class="pricing-table-list">
+                  <li><span>256MB</span> Almacenamiento</li>
+                  <li><span>1 </span>Usuario</li>
+                  <li><span>1 </span>Sitio web</li>
+                  <li><span>1 </span>Dominio</li>
+                  <li><span>Ilimitado </span>Ancho de Banda</li>
+                  <li><span>Ilimitados </span>Correos</li>
+                </ul>
+                <a href="#" class="pricing-table-button">Seleccionar plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="cuadro">
+            <i class="fa-solid fa-magnifying-glass"> ayuda</i>
+            <i class="fa-brands fa-instagram"> Instagram</i>
+            <i class="fa-brands fa-twitter"> twitter</i>
+               
+    </div>
+
+        <a class="condiciones" href="#">
+            Legales y Condiciones Generales de Transporte</a
+          >
+        
+    </footer>
+    <script src="slider.js"></script>
+  </body>
+</html>
