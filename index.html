@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Es una pagina dedicada a la de boletos" />
-
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
 
@@ -16,7 +19,7 @@
     <!-- Acá abajo tenemos el header, que contiene dos divisores, tiene un nav, y un div con clase de galería, en el nav vamos a contener todo el menu de navegación de la página sumado al Logo que podría ser una imagen, un texto o lo que se te ocurra, en este caso lo hice así. Tambien si te fijas, contiene un button con style none, esto es porque vamos a mostrarlo cuando llegue a cierta resolución la pantalla, ya que sera el boton de navegación para el celular. -->
     <header>
       <nav>
-<img class="logo" src="../zyro-image.png" alt="">
+<img class="logo" src="../zyro-image.png" alt="logo">
 
   <div class="items">
           <a href="#">Home</a>
@@ -98,7 +101,7 @@
     </header>
 
     <main>
-        <H1>Vuelos internacionales</H1>
+        <h1 class="Titulo-vuelos">Vuelos internacionales</h1>
 
 <section class="Opciones-internacionales">
   <div class="irlanda">
@@ -107,7 +110,8 @@
     <br>
     <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
     <i class="fi fi-ss-plane-alt"></i>
-    
+    <p class="rectangle">Ida y Vuelta</p>
+    <h2 class="price">$459.999</h2>
 
   </div>
   <div class="london">
@@ -115,19 +119,24 @@
     <h3>Paquete a London</h3>
     <br>
     <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+    <p class="rectangle">Ida y Vuelta</p>
+    <h2 class="price">$459.999</h2>
     </div>
   <div class="cuba">
     <img height="166" width="303px" src="https://www.cubatesoro.com/wp-content/uploads/2015/09/turismo-cubano.jpg" alt="img-cuba">
     <h3>Vuelos Cuba</h3>
     <br>
     <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
-
+    <p class="rectangle">Ida y Vuelta</p>
+    <h2 class="price">$459.999</h2>
   </div>
   <div class="inglaterra">
     <img height="166" width="303px" src="https://www.losviajesdegrimes.com/wp-content/uploads/2019/12/que-ver-en-inglaterra.jpg" alt="img-inglaterra">
     <h3>Vuelos a Inglaterra</h3>
     <br>
     <p>Desde <b>Vie 16 dic</b> Hasta <b>Mar 20 dic</b></p>
+<p class="rectangle">Ida y Vuelta</p>
+<h2 class="price">$459.999</h2>
   </div>
 </section>
 
@@ -259,10 +268,11 @@
     </main>
     <footer>
         <div class="cuadro">
+          <a class="Link-Footer" href="#">
             <i class="fa-solid fa-magnifying-glass"> ayuda</i>
             <i class="fa-brands fa-instagram"> Instagram</i>
             <i class="fa-brands fa-twitter"> twitter</i>
-               
+               </a>
     </div>
 
         <a class="condiciones" href="#">
