@@ -1,6 +1,8 @@
 /*Personalizacion*/
 :root {
  --Text-Primario: 'Oswald', sans-serif;  
+ --text-secundario:'Roboto Slab', serif;
+
  }
 
 /* Sobre el nav, le dimos un display flex y este ya coloca las cajas una alado de la otra, con justify content le señalamos como queremos que las separe, en este caso yo quería que este pegado un contenedor al costado izquierdo, y el otro al costado derecho (cabe aclarar que si le agregamos otro div más, este estara en la mitad, ya que es la medida que el toma) */
@@ -119,13 +121,20 @@ top: 22%
 }
 .formulario {
   display: grid;
-  
+  padding-left: 1%;
+  gap: 9%;
 }
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+.inicia-sesion {
+  padding: 2%;
+  font-size: x-large;
+  font-family: var( --text-secundario);
+}
+
 .bg-form {
   width: 100%;
   height: 100%;
@@ -345,13 +354,14 @@ display: contents;
 .formulario label  {
   color: black;
   font-weight: 900;
-  font-size: 154%;
-  background: #26bdbf70;
+  font-size: 150%;
    }
 
 
 .formulario input{
-border:  7px double;
+border:  none;
+
+height: 200%;
 }
 
 .fa-solid  {
@@ -365,6 +375,9 @@ border:  7px double;
   display: flex;
   justify-content: center;
   font-family: var(--Text-Primario);
+  margin-top: 0;
+  font-size: xxx-large;
+  color: #0aa364;
   
 }
 
